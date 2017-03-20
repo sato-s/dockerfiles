@@ -26,6 +26,10 @@ RUN apt-get install -y --no-install-recommends \
     silversearcher-ag \
     fish
 
+# Volume
+RUN mkdir /data
+VOLUME /data
+
 # Dotfiles
 WORKDIR /root
 RUN git clone --recursive https://github.com/sato-s/vimrc.git
