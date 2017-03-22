@@ -28,7 +28,6 @@ RUN apt-get install -y --no-install-recommends \
 
 # Volume
 RUN mkdir /data
-VOLUME /data
 
 # Dotfiles
 WORKDIR /root
